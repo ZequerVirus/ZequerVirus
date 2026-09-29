@@ -61,6 +61,41 @@ impl Engineer {
 > Diseño y construyo backends con **Rust**, **Clean Architecture** y **AWS**. Me apasiona la arquitectura de software, la documentación clara y los sistemas que escalan sin romperse.
 
 ---
+## Filosofía de trabajo
+
+<div align="center">
+
+| Principio | En qué se traduce |
+| :--- | :--- |
+| **Clean Architecture** | Capas desacopladas, testeables, mantenibles |
+| **SOLID** | Código que envejece bien y escala con el equipo |
+| **Documentación** | Diagramas UML, ADRs y READMEs que hablan por sí solos |
+| **CI/CD** | Despliegues repetibles, rápidos y sin drama |
+| **Cloud AWS + K8s** | Alta disponibilidad, red segmentada, costos controlados |
+| **IA & Agentes** | Automatización real con Claude, OpenCode y ML |
+
+</div>
+---
+
+## 🐍 Mis contribuciones
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/ZequerVirus/ZequerVirus/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</div>
+
+---
+
+## Contacto
+
+<div align="center">
+
+<a href="mailto:sequeiros.dc44@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+</div>
+
+---
 
 ## Stack principal
 
@@ -110,42 +145,6 @@ impl Engineer {
 
 ![Scrum](https://img.shields.io/badge/Scrum-6DB33F?style=for-the-badge&logo=scrumalliance&logoColor=white)
 ![Product Owner](https://img.shields.io/badge/Product%20Owner-0052CC?style=for-the-badge&logo=jira&logoColor=white)
-
-</div>
-
----
-
-## Filosofía de trabajo
-
-<div align="center">
-
-| Principio | En qué se traduce |
-| :--- | :--- |
-| **Clean Architecture** | Capas desacopladas, testeables, mantenibles |
-| **SOLID** | Código que envejece bien y escala con el equipo |
-| **Documentación** | Diagramas UML, ADRs y READMEs que hablan por sí solos |
-| **CI/CD** | Despliegues repetibles, rápidos y sin drama |
-| **Cloud AWS + K8s** | Alta disponibilidad, red segmentada, costos controlados |
-| **IA & Agentes** | Automatización real con Claude, OpenCode y ML |
-
-</div>
----
-
-## 🐍 Mis contribuciones
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/ZequerVirus/ZequerVirus/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-</div>
-
----
-
-## Contacto
-
-<div align="center">
-
-<a href="mailto:sequeiros.dc44@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
 
 </div>
 
