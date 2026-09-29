@@ -19,15 +19,15 @@
 
 ---
 
-## 👋 Sobre mí
+## Sobre mí
 
 ### Backend Engineer | Software Architect
 
 Especializado en **Software Architecture**, **Clean Architecture** y **AWS**. Construyo APIs robustas, pipelines CI/CD, apps mobile, orquestación de contenedores para alta disponibilidad y agentes de IA en producción.
 
-- 🌱 **Aprendiendo:** Stellar y Web3 en general
-- 💬 **Pregúntame sobre:** Rust, Clean Architecture, AWS, CI/CD, IA/Agentes, Arquitectura de software
-- 📫 **Contacto:** sequeiros.dc44@gmail.com
+- **Aprendiendo:** Stellar y Web3 en general
+- **Pregúntame sobre:** Rust, Clean Architecture, AWS, CI/CD, IA/Agentes, Arquitectura de software
+- **Contacto:** sequeiros.dc44@gmail.com
 
 ```rust
 struct Engineer {
@@ -62,7 +62,7 @@ impl Engineer {
 
 ---
 
-## 🛠️ Stack principal
+## Stack principal
 
 <div align="center">
 
@@ -115,7 +115,7 @@ impl Engineer {
 
 ---
 
-## 📊 Estadísticas de GitHub
+## Estadísticas de GitHub
 
 <div align="center">
 
@@ -142,15 +142,7 @@ impl Engineer {
 
 ---
 
-## 🐍 Mis contribuciones
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/ZequerVirus/ZequerVirus/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-</div>
-
----
-
-## 💡 Filosofía de trabajo
+## Filosofía de trabajo
 
 <div align="center">
 
@@ -167,18 +159,12 @@ impl Engineer {
 
 ---
 
-## 📬 Contacto
+## Contacto
 
 <div align="center">
 
 <a href="mailto:sequeiros.dc44@gmail.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/TU_LINKEDIN/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://TU_PORTAFOLIO.com">
-  <img src="https://img.shields.io/badge/Portafolio-000000?style=for-the-badge&logo=firefox&logoColor=white" />
 </a>
 
 </div>
@@ -190,65 +176,4 @@ impl Engineer {
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer&text=Gracias%20por%20pasar&fontSize=22&fontColor=ffffff&animation=twinkling" />
 
 </div>
-```
-
----
-
-### 🔧 Qué corregí respecto a la versión anterior
-
-| Problema | Solución |
-| :--- | :--- |
-| `streak-stats.herokuapp.com` ya no responde | Cambiado a `streak-stats.demolab.com` |
-| Bloques `<div>` anidados sin cierre | Reordenados y cerrados correctamente |
-| Texto del header con emoji rompía la URL | Eliminé el emoji del `text=` de capsule-render |
-| Badges con `&` sin escapar en algunos visores | Reemplazados por `%26` cuando aplica |
-| Bloque Rust dentro de `md` podía romper al copiar | Mantenido dentro de triple backtick cerrado |
-
----
-
-### ✅ Checklist final antes de subirlo
-
-1. Reemplaza `TU_LINKEDIN` por tu usuario real (ej: `zequervirus`).
-2. Reemplaza `TU_PORTAFOLIO.com` por tu sitio, o elimina ese badge si no tienes.
-3. Sube el archivo como `README.md` en tu repo `ZequerVirus/ZequerVirus`.
-4. Espera 1-2 minutos y recarga tu perfil.
-
----
-
-### 🐍 Para que la serpiente funcione
-
-Necesitas crear `.github/workflows/snake.yml` con esto:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Generate snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
