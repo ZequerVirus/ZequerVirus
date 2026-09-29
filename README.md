@@ -119,11 +119,6 @@ impl Engineer {
 
 <div align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=ZequerVirus&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7" />
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZequerVirus&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&langs_count=8" />
-
-<br/>
-
 <img src="https://streak-stats.demolab.com?user=ZequerVirus&theme=tokyonight&hide_border=true&background=0D1117&stroke=36BCF7&ring=36BCF7&fire=FF6C37&currStreakLabel=36BCF7" />
 
 <br/>
