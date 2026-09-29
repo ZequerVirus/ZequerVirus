@@ -23,7 +23,7 @@
 
 ### Backend Engineer | Software Architect
 
-Especializado en **Software Architecture**, **Clean Architecture** y **AWS**. Construyo APIs robustas, pipelines CI/CD, apps mobile, orquestación de contenedores para alta disponibilidad y agentes de IA en producción.
+Especializado en **Software Architecture**, **Clean Architecture** y **AWS**. Construyo APIs robustas, pipelines CI/CD, apps mobile, orquestacion de contenedores, desarrollos (con alta disponibilidad y failover) y agentes de IA en producción.
 
 - **Aprendiendo:** Stellar y Web3 en general
 - **Pregúntame sobre:** Rust, Clean Architecture, AWS, CI/CD, IA/Agentes, Arquitectura de software
