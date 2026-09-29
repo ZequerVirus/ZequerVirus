@@ -115,20 +115,6 @@ impl Engineer {
 
 ---
 
-## Estadísticas de GitHub
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=ZequerVirus&theme=tokyonight&hide_border=true&background=0D1117&stroke=36BCF7&ring=36BCF7&fire=FF6C37&currStreakLabel=36BCF7" />
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ZequerVirus&theme=tokyo-night&bg_color=0D1117&color=36BCF7&line=36BCF7&point=FFFFFF&hide_border=true" />
-
-</div>
-
----
-
 ## Filosofía de trabajo
 
 <div align="center">
