@@ -129,6 +129,13 @@ impl Engineer {
 | **IA & Agentes** | Automatización real con Claude, OpenCode y ML |
 
 </div>
+---
+
+## 🐍 Mis contribuciones
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/ZequerVirus/ZequerVirus/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</div>
 
 ---
 
