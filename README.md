@@ -129,14 +129,6 @@ impl Engineer {
 
 ---
 
-## 🏆 Logros
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=ZequerVirus&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" />
-</div>
-
----
-
 ## Filosofía de trabajo
 
 <div align="center">
