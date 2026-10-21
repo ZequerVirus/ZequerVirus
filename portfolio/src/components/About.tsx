@@ -1,4 +1,6 @@
 import { engineerSnippet, profile } from "../data";
+import { CredlyBadge } from "./CredlyBadge";
+import { LineIcon } from "./LineIcon";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
 import { TiltCard } from "./TiltCard";
@@ -29,6 +31,15 @@ export function About() {
                 Perfil de GitHub
               </a>
             </TiltCard>
+
+            <div className="card cert-card">
+              <p className="eyebrow">Certificación</p>
+              <CredlyBadge badgeId={profile.credlyBadgeId} />
+              <a className="cert-link" href={profile.credlyUrl} target="_blank" rel="noreferrer">
+                Verificar en Credly
+                <LineIcon name="arrow" size={14} />
+              </a>
+            </div>
           </Reveal>
         </div>
       </div>

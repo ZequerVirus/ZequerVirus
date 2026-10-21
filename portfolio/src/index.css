@@ -755,6 +755,32 @@ main {
   font-size: 0.95rem;
 }
 
+.cert-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.credly-badge iframe {
+  display: block;
+  border-radius: 12px;
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+}
+
 .tilt {
   transform-style: preserve-3d;
   will-change: transform;

@@ -44,6 +44,8 @@ export const profile = {
   github: "https://github.com/ZequerVirus",
   repo: "https://github.com/ZequerVirus/ZequerVirus",
   avatar: "https://avatars.githubusercontent.com/u/104024109?v=4",
+  credlyBadgeId: "9ea805f3-0d85-48b5-9e80-dfcba36d03af",
+  credlyUrl: "https://www.credly.com/badges/9ea805f3-0d85-48b5-9e80-dfcba36d03af",
   hireable: true,
 };
 
