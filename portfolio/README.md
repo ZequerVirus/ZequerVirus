@@ -21,3 +21,20 @@ npm run dev       # desarrollo en http://localhost:5173
 npm run build     # typecheck + build de producción en dist/
 npm run preview   # sirve el build localmente
 ```
+
+## Despliegue en Cloudflare Pages
+
+1. En el dashboard de Cloudflare ve a **Workers & Pages → Create → Pages → Connect to Git**.
+2. Selecciona el repositorio `ZequerVirus/ZequerVirus` y la rama de producción (`main` o la que prefieras).
+3. Configura el build:
+
+   | Campo                  | Valor           |
+   | ---------------------- | --------------- |
+   | Framework preset       | Vite            |
+   | Root directory         | `portfolio`     |
+   | Build command          | `npm run build` |
+   | Build output directory | `dist`          |
+
+4. Pulsa **Save and Deploy**. Cada push a la rama de producción redespliega automáticamente.
+
+También puedes desplegar a mano con Wrangler: `npm run build && npx wrangler pages deploy dist --project-name=<nombre>`.
