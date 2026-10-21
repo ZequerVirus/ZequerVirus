@@ -28,13 +28,14 @@ npm run preview   # sirve el build localmente
 2. Selecciona el repositorio `ZequerVirus/ZequerVirus` y la rama de producción (`main` o la que prefieras).
 3. Configura el build:
 
-   | Campo                  | Valor           |
-   | ---------------------- | --------------- |
-   | Framework preset       | Vite            |
-   | Root directory         | `portfolio`     |
-   | Build command          | `npm run build` |
-   | Build output directory | `dist`          |
+   | Campo          | Valor                  |
+   | -------------- | ---------------------- |
+   | Root directory | `portfolio`            |
+   | Build command  | `npm run build`        |
+   | Deploy command | `npx wrangler deploy`  |
+
+   La carpeta a publicar (`dist`) y el modo SPA están definidos en `wrangler.jsonc`, así que no hace falta indicar directorio de salida.
 
 4. Pulsa **Save and Deploy**. Cada push a la rama de producción redespliega automáticamente.
 
-También puedes desplegar a mano con Wrangler: `npm run build && npx wrangler pages deploy dist --project-name=<nombre>`.
+También puedes desplegar a mano desde `portfolio/`: `npm run build && npx wrangler login && npx wrangler deploy`.
