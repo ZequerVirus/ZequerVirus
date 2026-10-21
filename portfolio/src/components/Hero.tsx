@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { siGithub, siWhatsapp } from "simple-icons";
 import { profile } from "../data";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 import { useTypewriter } from "../hooks/useTypewriter";
+import { BrandIcon } from "./BrandIcon";
 import { LayeredRings } from "./LayeredRings";
+import { LineIcon } from "./LineIcon";
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -35,10 +38,33 @@ export function Hero() {
           <a className="btn btn-primary" href="#contacto">
             Hablemos
           </a>
-          <a className="btn btn-ghost" href={profile.github} target="_blank" rel="noreferrer">
-            Ver GitHub
+          <a className="btn btn-ghost" href="#habilidades">
+            Ver habilidades
           </a>
         </div>
+
+        <ul className="social-row" aria-label="Contacto y redes">
+          <li>
+            <a className="icon-btn" href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+              <BrandIcon icon={siGithub} size={18} mono />
+            </a>
+          </li>
+          <li>
+            <a className="icon-btn" href={`mailto:${profile.email}`} aria-label={`Escribir a ${profile.email}`}>
+              <LineIcon name="mail" size={18} />
+            </a>
+          </li>
+          <li>
+            <a className="icon-btn" href={profile.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <BrandIcon icon={siWhatsapp} size={18} mono />
+            </a>
+          </li>
+          <li>
+            <a className="icon-btn" href={profile.phoneHref} aria-label={`Llamar al ${profile.phone}`}>
+              <LineIcon name="phone" size={18} />
+            </a>
+          </li>
+        </ul>
       </motion.div>
 
       <motion.div

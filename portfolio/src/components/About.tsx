@@ -5,7 +5,7 @@ import { TiltCard } from "./TiltCard";
 
 export function About() {
   return (
-    <section id="sobre-mi" className="section">
+    <section id="sobre-mi" className="section tone-blue">
       <div className="container">
         <Reveal>
           <SectionTitle eyebrow="01 — Sobre mí" title="Arquitectura, backend y producto" />

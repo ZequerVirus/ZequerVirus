@@ -1,11 +1,13 @@
 import { motion, MotionConfig, useScroll, useSpring } from "framer-motion";
 import { About } from "./components/About";
+import { Aurora } from "./components/Aurora";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Philosophy } from "./components/Philosophy";
 import { ScrollBackground } from "./components/ScrollBackground";
+import { Skills } from "./components/Skills";
 import { Stack } from "./components/Stack";
 import { useTheme } from "./hooks/useTheme";
 
@@ -16,6 +18,7 @@ export function App() {
 
   return (
     <MotionConfig reducedMotion="user">
+      <Aurora />
       <ScrollBackground theme={theme} />
       <motion.div className="scroll-progress" style={{ scaleX: progress }} aria-hidden="true" />
 
@@ -24,8 +27,9 @@ export function App() {
       <main>
         <Hero />
         <About />
-        <Philosophy />
+        <Skills />
         <Stack />
+        <Philosophy />
         <Contact />
       </main>
 

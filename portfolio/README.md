@@ -9,9 +9,13 @@ Landing page de presentación construida con **React + TypeScript**, **Vite** y 
 - Fondo de partículas con parallax que reacciona al scroll
 - Objeto 3D de "capas de Clean Architecture" que rota con el scroll
 - Animaciones de entrada, tarjetas con efecto tilt, marquee del stack y barra de progreso
+- Paleta minimalista de tonos por sección y manchas de color "aurora" en el fondo
+- Logos oficiales de lenguajes y herramientas ([simple-icons](https://simpleicons.org)) con filtros por categoría
+- Sección de habilidades: ingeniería de software y fundamentos de informática
+- Contacto con correo, teléfono, WhatsApp y GitHub, y un formulario que abre el correo o WhatsApp con el mensaje redactado (sin backend)
 - Respeta `prefers-reduced-motion`
 
-Los datos (nombre, bio, stack, contacto) provienen del perfil de GitHub [@ZequerVirus](https://github.com/ZequerVirus). Para actualizarlos, edita `src/data.ts`.
+Los datos (nombre, bio, habilidades, stack y contacto) están en `src/data.ts`.
 
 ## Scripts
 

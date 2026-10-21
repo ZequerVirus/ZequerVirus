@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../data";
+import { useActiveSection } from "../hooks/useActiveSection";
 import type { Theme } from "../hooks/useTheme";
 import { ThemeToggle } from "./ThemeToggle";
+
+const sectionIds = navLinks.map((link) => link.href.slice(1));
 
 interface Props {
   theme: Theme;
@@ -11,6 +14,7 @@ interface Props {
 export function Navbar({ theme, onToggleTheme }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const active = useActiveSection(sectionIds);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -27,13 +31,21 @@ export function Navbar({ theme, onToggleTheme }: Props) {
         </a>
 
         <ul className={`nav-links${open ? " is-open" : ""}`}>
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} onClick={() => setOpen(false)}>
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = active === link.href.slice(1);
+            return (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={isActive ? "is-active" : undefined}
+                  aria-current={isActive ? "location" : undefined}
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            );
+          })}
         </ul>
 
         <div className="nav-actions">
