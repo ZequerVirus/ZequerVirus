@@ -7,10 +7,10 @@ const tones: Tone[] = ["violet", "blue", "teal", "green", "amber", "rose"];
 
 export function Philosophy() {
   return (
-    <section id="filosofia" className="section tone-amber">
+    <section id="filosofia" className="section">
       <div className="container">
         <Reveal>
-          <SectionTitle eyebrow="04 — Filosofía" title="Cómo trabajo y en qué me enfoco" />
+          <SectionTitle path="~/filosofia" command="cat principios.md" title="Cómo trabajo y en qué me enfoco" />
         </Reveal>
 
         <div className="principles-grid">

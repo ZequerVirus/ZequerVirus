@@ -4,8 +4,8 @@ import { profile } from "../data";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 import { useTypewriter } from "../hooks/useTypewriter";
 import { BrandIcon } from "./BrandIcon";
-import { LayeredRings } from "./LayeredRings";
 import { LineIcon } from "./LineIcon";
+import { Neofetch } from "./Neofetch";
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -26,10 +26,13 @@ export function Hero() {
           </p>
         )}
         <h1>
-          Hola, soy <span className="gradient-text">{profile.name}</span>
+          Hola, soy <span className="accent-text">{profile.name}</span>
         </h1>
         <p className="role">{profile.role}</p>
         <p className="typing" aria-live="polite">
+          <span className="prompt-sep" aria-hidden="true">
+            ${" "}
+          </span>
           <span>{typed}</span>
           <span className="caret" aria-hidden="true" />
         </p>
@@ -43,6 +46,7 @@ export function Hero() {
           </a>
         </div>
 
+        {/* En escritorio estos enlaces viven en el Dock */}
         <ul className="social-row" aria-label="Contacto y redes">
           <li>
             <a className="icon-btn" href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -69,11 +73,11 @@ export function Hero() {
 
       <motion.div
         className="hero-visual"
-        initial={{ opacity: 0, scale: 0.92 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+        initial={{ opacity: 0, y: 32, scale: 0.97 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
       >
-        <LayeredRings />
+        <Neofetch />
       </motion.div>
     </section>
   );

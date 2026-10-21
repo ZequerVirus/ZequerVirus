@@ -90,6 +90,18 @@ const paths = {
   ),
   check: <path d="M20 6 9 17l-5-5" />,
   arrow: <path d="M7 17 17 7M7 7h10v10" />,
+  home: (
+    <>
+      <path d="M3 10.5 12 3l9 7.5" />
+      <path d="M5 9v11h14V9" />
+    </>
+  ),
+  user: (
+    <>
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21a8 8 0 0 1 16 0" />
+    </>
+  ),
 } satisfies Record<string, ReactNode>;
 
 export type IconName = keyof typeof paths;

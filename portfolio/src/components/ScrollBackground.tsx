@@ -57,7 +57,8 @@ export function ScrollBackground({ theme }: Props) {
     };
 
     const render = (animate: boolean) => {
-      const [r, g, b] = themeRef.current === "dark" ? [125, 211, 252] : [37, 99, 235];
+      // Gris neutro del sistema (label de macOS), sin tintes de color
+      const [r, g, b] = themeRef.current === "dark" ? [235, 235, 245] : [60, 60, 67];
       ctx.clearRect(0, 0, width, height);
 
       const points = particles.map((p) => {
@@ -73,7 +74,7 @@ export function ScrollBackground({ theme }: Props) {
         for (let j = i + 1; j < points.length; j++) {
           const dist = Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y);
           if (dist < 140) {
-            ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${(1 - dist / 140) * 0.2})`;
+            ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${(1 - dist / 140) * 0.1})`;
             ctx.beginPath();
             ctx.moveTo(points[i].x, points[i].y);
             ctx.lineTo(points[j].x, points[j].y);
@@ -83,7 +84,7 @@ export function ScrollBackground({ theme }: Props) {
       }
 
       for (const p of points) {
-        ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${0.3 + p.depth * 0.5})`;
+        ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${0.15 + p.depth * 0.3})`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, 0.8 + p.depth * 1.4, 0, Math.PI * 2);
         ctx.fill();

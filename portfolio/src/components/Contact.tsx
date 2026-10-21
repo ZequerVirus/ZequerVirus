@@ -5,6 +5,7 @@ import { BrandIcon } from "./BrandIcon";
 import { LineIcon } from "./LineIcon";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
+import { Window } from "./Window";
 
 interface Method {
   label: string;
@@ -77,8 +78,7 @@ export function Contact() {
   const update = (field: keyof typeof emptyForm) => (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm((f) => ({ ...f, [field]: e.target.value }));
 
-  const composeMessage = () =>
-    `Hola Carlos, soy ${form.name.trim()} (${form.email.trim()}).\n\n${form.message.trim()}`;
+  const composeMessage = () => `Hola Carlos, soy ${form.name.trim()} (${form.email.trim()}).\n\n${form.message.trim()}`;
 
   // El sitio es estático: el formulario abre el correo o WhatsApp con el mensaje ya redactado
   const sendByEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -95,10 +95,10 @@ export function Contact() {
   };
 
   return (
-    <section id="contacto" className="section tone-rose">
+    <section id="contacto" className="section">
       <div className="container">
         <Reveal>
-          <SectionTitle eyebrow="05 — Contacto" title="¿Hablamos de tu próximo proyecto?" />
+          <SectionTitle path="~/contacto" command="mail carlos" title="¿Hablamos de tu próximo proyecto?" />
         </Reveal>
 
         <div className="contact-grid">
@@ -141,7 +141,7 @@ export function Contact() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <form ref={formRef} className="card contact-form" onSubmit={sendByEmail}>
+            <Window as="form" formRef={formRef} title="Nuevo mensaje" className="contact-form" onSubmit={sendByEmail}>
               <h3>Envíame un mensaje</h3>
 
               <div className="field">
@@ -198,7 +198,7 @@ export function Contact() {
               <p className="form-status muted" aria-live="polite">
                 {status}
               </p>
-            </form>
+            </Window>
           </Reveal>
         </div>
       </div>

@@ -59,14 +59,6 @@ export const navLinks = [
   { href: "#contacto", label: "Contacto" },
 ];
 
-// Capas de Clean Architecture, de la más externa a la más interna
-export const layers = [
-  { label: "Frameworks", note: "Web, DB, cloud" },
-  { label: "Adaptadores", note: "Interfaces y repositorios" },
-  { label: "Casos de uso", note: "Lógica de aplicación" },
-  { label: "Entidades", note: "Reglas de negocio" },
-];
-
 interface Skill {
   title: string;
   text: string;

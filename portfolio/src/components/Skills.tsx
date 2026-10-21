@@ -6,10 +6,10 @@ import { TiltCard } from "./TiltCard";
 
 export function Skills() {
   return (
-    <section id="habilidades" className="section tone-violet">
+    <section id="habilidades" className="section">
       <div className="container">
         <Reveal>
-          <SectionTitle eyebrow="02 — Habilidades" title="Ingeniería de software e informática" />
+          <SectionTitle path="~/habilidades" command="ls -la" title="Ingeniería de software e informática" />
         </Reveal>
 
         <Reveal>
