@@ -79,7 +79,7 @@ export function About() {
                 ))}
               </dl>
               <a className="btn btn-ghost btn-block" href={profile.github} target="_blank" rel="noreferrer">
-                Perfil de GitHub
+                Perfil de Git
               </a>
             </Window>
 
