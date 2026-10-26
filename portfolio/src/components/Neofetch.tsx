@@ -2,14 +2,14 @@ import { profile } from "../data";
 import { Window } from "./Window";
 
 const info: [string, string][] = [
-  ["Role", "Backend Engineer"],
+  ["Role", "Fullstack Engineer"],
   ["Arch", "Clean Architecture · SOLID"],
   ["Langs", "Rust · Python · TypeScript"],
-  ["Cloud", "AWS · Docker · Kubernetes"],
+  ["Cloud", "AWS · Cloudflare · Docker · K8s"],
   ["CI/CD", "GitHub Actions"],
   ["AI", "Claude · OpenCode · ML"],
   ["Mobile", "Flutter"],
-  ["Learning", "Stellar · Web3"],
+  ["Learning", "AI Engineer · Stellar · Web3"],
 ];
 
 const palette = ["red", "orange", "yellow", "green", "teal", "blue", "indigo", "purple"];

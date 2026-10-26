@@ -14,10 +14,10 @@ const tree = [
 ];
 
 const specs = [
-  ["Rol", "Backend & Software Architect"],
-  ["Lenguaje", "Rust · Python"],
-  ["Cloud", "AWS · Kubernetes"],
-  ["Enfoque", "IA / Agentes"],
+  ["Rol", "Fullstack & Software Architect"],
+  ["Lenguaje", "Rust · Python · TypeScript"],
+  ["Cloud", "AWS · Cloudflare · K8s"],
+  ["Enfoque", "Producto · IA / Agentes"],
 ];
 
 export function About() {
@@ -27,7 +27,7 @@ export function About() {
     <section id="sobre-mi" className="section">
       <div className="container">
         <Reveal>
-          <SectionTitle path="~/sobre-mi" command="cat README.md" title="Arquitectura, backend y producto" />
+          <SectionTitle path="~/sobre-mi" command="cat README.md" title="Arquitectura, fullstack y producto" />
         </Reveal>
 
         <div className="about-grid">

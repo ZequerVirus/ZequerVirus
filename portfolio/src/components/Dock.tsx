@@ -7,6 +7,7 @@ import { LineIcon, type IconName } from "./LineIcon";
 const sections: { id: string; label: string; icon: IconName }[] = [
   { id: "inicio", label: "Inicio", icon: "home" },
   { id: "sobre-mi", label: "Sobre mí", icon: "user" },
+  { id: "soluciones", label: "Soluciones", icon: "briefcase" },
   { id: "habilidades", label: "Habilidades", icon: "layers" },
   { id: "stack", label: "Stack", icon: "code" },
   { id: "filosofia", label: "Filosofía", icon: "target" },

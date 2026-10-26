@@ -11,7 +11,9 @@ Landing page de presentación construida con **React + TypeScript**, **Vite** y 
 - Animaciones de entrada, tarjetas con efecto tilt, marquee del stack y barra de progreso
 - Paleta minimalista de tonos por sección y manchas de color "aurora" en el fondo
 - Logos oficiales de lenguajes y herramientas ([simple-icons](https://simpleicons.org)) con filtros por categoría
+- Sección de soluciones explicadas en lenguaje de cliente, según el rol y las habilidades
 - Sección de habilidades: ingeniería de software y fundamentos de informática
+- Perfil Fullstack con AWS y Cloudflare
 - Contacto con correo, teléfono, WhatsApp y GitHub, y un formulario que abre el correo o WhatsApp con el mensaje redactado (sin backend)
 - Respeta `prefers-reduced-motion`
 

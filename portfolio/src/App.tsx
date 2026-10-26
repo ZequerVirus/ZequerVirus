@@ -8,6 +8,7 @@ import { Navbar } from "./components/Navbar";
 import { Philosophy } from "./components/Philosophy";
 import { ScrollBackground } from "./components/ScrollBackground";
 import { Skills } from "./components/Skills";
+import { Solutions } from "./components/Solutions";
 import { Stack } from "./components/Stack";
 import { useTheme } from "./hooks/useTheme";
 
@@ -26,6 +27,7 @@ export function App() {
       <main>
         <Hero />
         <About />
+        <Solutions />
         <Skills />
         <Stack />
         <Philosophy />
