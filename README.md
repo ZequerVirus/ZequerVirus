@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Hola,%20soy%20ZequerVirus&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Backend%20Engineer%20%7C%20Software%20Architect&descAlignY=58&descSize=18" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Hola,%20soy%20ZequerVirus&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20Engineer%20%7C%20Software%20Architect&descAlignY=58&descSize=18" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=750&lines=Backend+Engineer+%7C+Rust+%2B+Clean+Architecture;Software+Architect+%7C+AWS+%2B+K8s+%2B+CI%2FCD;AI+Agents+%7C+Claude+%2C+OpenCode;Mobile+%7C+Flutter;Backends+robustos+y+de+alta+disponibilidad" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=750&lines=Backend+Engineer+%7C+Rust+%2B+Clean+Architecture;Software+Architect+%7C+AWS+%2B+K8s+%2B+CI%2FCD;AI+Agents+%7C+Claude+%2C+OpenCode;Mobile+%7C+Flutter;Servicios+robustos+y+de+alta+disponibilidad" alt="Typing SVG" />
 </a>
 
 <p>
@@ -21,11 +21,11 @@
 
 ## Sobre mí
 
-### Backend Engineer | Software Architect
+### Fullstack Engineer | Software Architect
 
 Especializado en **Software Architecture**, **Clean Architecture** y **AWS**. Construyo APIs robustas, pipelines CI/CD, apps mobile, orquestacion de contenedores, desarrollos (con alta disponibilidad y failover) y agentes de IA en producción.
 
-- **Aprendiendo:** Stellar y Web3 en general
+- **Aprendiendo:** Cloudflare y AI-Engineer
 - **Pregúntame sobre:** Rust, Clean Architecture, AWS, CI/CD, IA/Agentes, Arquitectura de software
 - **Contacto:** sequeiros.dc44@gmail.com
 
@@ -42,7 +42,7 @@ struct Engineer {
 impl Engineer {
     fn new() -> Self {
         Self {
-            role: "Backend Engineer & Software Architect",
+            role: "Fullstack Engineer & Software Architect",
             focus: vec![
                 "APIs robustas",
                 "Alta disponibilidad",
