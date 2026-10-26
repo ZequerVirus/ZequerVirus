@@ -49,7 +49,7 @@ El proyecto usa **Workers Builds** con Workers Assets. La carpeta publicada (`di
 ### Si un deployment queda en `Queued`
 
 - El plan Free permite **1 build concurrente**: cancela builds atascados y usa **Retry deployment**.
-- Desactiva los **preview builds** para ramas que no sean `main`, especialmente `output`.
+- Desactiva los **preview builds** para ramas que no sean `main`, especialmente `output` .
 - Como alternativa inmediata, despliega a mano desde `portfolio/`:
 
   ```bash
