@@ -23,7 +23,7 @@
 
 ### Fullstack Engineer | Software Architect
 
-Especializado en **Software Architecture**, **Clean Architecture** y **AWS**. Construyo APIs robustas, pipelines CI/CD, apps mobile, orquestacion de contenedores, desarrollos (con alta disponibilidad y failover) y agentes de IA en producción.
+Especializado en **Software Architecture**, **Clean Architecture** y **AWS**. Construyo APIs robustas, pipelines CI/CD, apps mobile, webs personalizadas y dinamicas, orquestacion de contenedores, desarrollos (con alta disponibilidad y failover) y agentes de IA en producción.
 
 - **Aprendiendo:** Cloudflare y AI-Engineer
 - **Pregúntame sobre:** Rust, Clean Architecture, AWS, CI/CD, IA/Agentes, Arquitectura de software
