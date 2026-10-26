@@ -26,22 +26,33 @@ npm install
 npm run dev       # desarrollo en http://localhost:5173
 npm run build     # typecheck + build de producción en dist/
 npm run preview   # sirve el build localmente
+npm run deploy    # build + deploy manual con Wrangler
 ```
 
-## Despliegue en Cloudflare Pages
+## Despliegue en Cloudflare Workers
 
-1. En el dashboard de Cloudflare ve a **Workers & Pages → Create → Pages → Connect to Git**.
-2. Selecciona el repositorio `ZequerVirus/ZequerVirus` y la rama de producción (`main` o la que prefieras).
+El proyecto usa **Workers Builds** con Workers Assets. La carpeta publicada (`dist`) y el modo SPA están definidos en `wrangler.jsonc`.
+
+1. En el dashboard ve a **Workers & Pages → Create → Workers → Connect to Git**.
+2. Selecciona el repositorio `ZequerVirus/ZequerVirus` y la rama `main`.
 3. Configura el build:
 
    | Campo          | Valor                  |
    | -------------- | ---------------------- |
    | Root directory | `portfolio`            |
-   | Build command  | `npm run build`        |
+   | Build command  | `npm ci && npm run build` |
    | Deploy command | `npx wrangler deploy`  |
+   | Node version   | `22` (`.nvmrc`)        |
 
-   La carpeta a publicar (`dist`) y el modo SPA están definidos en `wrangler.jsonc`, así que no hace falta indicar directorio de salida.
+4. Pulsa **Save and Deploy**. Cada push a `main` redespliega automáticamente.
 
-4. Pulsa **Save and Deploy**. Cada push a la rama de producción redespliega automáticamente.
+### Si un deployment queda en `Queued`
 
-También puedes desplegar a mano desde `portfolio/`: `npm run build && npx wrangler login && npx wrangler deploy`.
+- El plan Free permite **1 build concurrente**: cancela builds atascados y usa **Retry deployment**.
+- Desactiva los **preview builds** para ramas que no sean `main`, especialmente `output`.
+- Como alternativa inmediata, despliega a mano desde `portfolio/`:
+
+  ```bash
+  npx wrangler login   # solo la primera vez
+  npm run deploy
+  ```
